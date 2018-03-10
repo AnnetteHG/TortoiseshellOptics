@@ -70,6 +70,8 @@ h1 {
   display: none;
 }
 
+/* Services Section */
+
 .services {
   display: flex;
   justify-content: center;
@@ -93,4 +95,44 @@ h1 {
 .ruler img,
 .truck img {
   width: 5rem;
+}
+
+/* Business Information Section */
+
+.business-info {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+.info {
+  width: 35%;
+  padding-right: 5%;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  background-color: cadetblue;
+  padding: 0.5rem 3rem 0.5rem 1.25rem;
+  width: 10rem;
+}
+
+.info p {
+  margin-top: 1rem;
+}
+
+/* Footer Section */
+
+.copyright {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  margin-top: 5rem;
+}
+
+.copyright img {
+  height: 1.5rem;
+  padding: 4rem 1rem 4rem 4rem;
 }

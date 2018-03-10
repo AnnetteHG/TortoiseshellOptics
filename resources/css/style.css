@@ -11,5 +11,86 @@ body {
 
 .container {
   max-width: 960px;
-  /*margin: 0 auto; or 1rem? */
+  margin: 0 auto;
+}
+
+/* Header and Banner Section */
+
+.banner {
+  background-image: url("/Users/Annette/TortoiseshellOptics/resources/images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  top: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: cadetblue;
+  font-size: 1rem;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-around; /*not working???*/
+}
+
+.logo {
+  display: flex;
+}
+
+.logo img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.headline {
+  position: absolute;
+  display: flex;
+  justify-content: flex-end;
+  top: 10rem;
+  right: 2rem;
+  background-color: white;
+  padding: 1.5rem 5rem;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  height: 8rem;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.paper img {
+  width: 3.5rem;
+}
+
+.ruler img,
+.truck img {
+  width: 5rem;
 }

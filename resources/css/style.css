@@ -14,6 +14,12 @@ body {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
 /* Header and Banner Section */
 
 .banner {
@@ -70,6 +76,59 @@ h1 {
   display: none;
 }
 
+@media only screen and (max-width: 1024px) {
+  .header {
+    top: 0rem;
+  }
+
+  .banner {
+    height: 22rem;
+  }
+
+  .headline {
+    top: 5rem;
+    padding: 0.75rem 4rem;
+  }
+
+  h1 {
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .logo span {
+    display: none;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    justify-content: flex-end; /* wont move menu? */
+  }
+
+  .banner {
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .headline {
+    top: 9rem;
+    right: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    width: auto; /* wont pull across entire banner*/
+  }
+
+  h1 {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+}
+
 /* Services Section */
 
 .services {
@@ -95,6 +154,25 @@ h1 {
 .ruler img,
 .truck img {
   width: 5rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 3.77rem;
+  }
+
+  .services span {
+    font-size: 0.77rem;
+  }
+
+  .ruler,
+  .truck {
+    padding-top: 1.54rem;
+  }
+
 }
 
 /* Business Information Section */
@@ -123,6 +201,31 @@ h1 {
   margin-top: 1rem;
 }
 
+@media only screen and (max-width: 470px) {
+  .business-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.77rem;
+  }
+
+  .info {
+    width: auto;
+  }
+
+  .info p {
+    font-size: 0.77rem;
+    padding-bottom: 4rem;
+  }
+
+  .title {
+    display: block;
+    text-align: center;
+    width: auto;
+  }
+
+}
+
 /* Footer Section */
 
 .copyright {
@@ -135,4 +238,21 @@ h1 {
 .copyright img {
   height: 1.5rem;
   padding: 4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width: 470px) {
+  .copyright span {
+    display: none;
+  }
+
+  .copyright {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+  }
+
+  .copyright img {
+    padding: 4rem;
+  }
+
 }

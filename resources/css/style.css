@@ -23,7 +23,7 @@ body {
 /* Header and Banner Section */
 
 .banner {
-  background-image: url("/Users/Annette/TortoiseshellOptics/resources/images/glasses-bg.png");
+  background-image: url("../images/glasses-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -35,16 +35,20 @@ body {
   position: relative;
   top: 1rem;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   background-color: cadetblue;
   font-size: 1rem;
   color: white;
   padding: 1rem 2rem;
 }
 
+.navigation li {
+  padding-left: 1rem;
+}
+
 .navigation {
   display: flex;
-  justify-content: space-around; /*not working???*/
+  /*justify-content: space-around; ???not working???*/
 }
 
 .logo {
@@ -119,7 +123,7 @@ h1 {
     right: auto;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    width: auto; /* wont pull across entire banner*/
+    width: auto; /* auto wont pull across entire banner*/
   }
 
   h1 {
